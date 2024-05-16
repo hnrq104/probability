@@ -47,7 +47,7 @@ def test_1():
     avarages = []
     for i in range(10,21):
         avarage = 0
-        for j in range(10):
+        for _ in range(10):
             steps,_ = process_1(i)
             avarage+=steps
         avarages.append(avarage/10)

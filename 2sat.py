@@ -1,6 +1,7 @@
 ''' Chapter 7'''
 
 import math,random,itertools
+import random
 
 m = 5
 n = 4
