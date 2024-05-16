@@ -75,11 +75,11 @@ def modified_sat3(n,clauses):
     m = len(clauses)
 
     unsatisfied = []
-    for i in range(3*m):
+    for _ in range(3*m):
         #generate a random truth assignment
         variables = [True if random.random() <= 1/2 else False for _ in range(n)]
         
-        for j in range(3*n):
+        for _ in range(3*n):
             unsatisfied.clear()
             for i, clause in enumerate(clauses):
                 if not satisfied(variables,clause): unsatisfied.append(i)
