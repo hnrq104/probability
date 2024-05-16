@@ -1,3 +1,5 @@
+''' Chapter 7'''
+
 import math,random,itertools
 
 m = 5
