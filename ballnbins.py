@@ -32,14 +32,3 @@ for (balls,victor) in numbers:
 
 print(f"Avarage number of balls thrown: {np.average([x[0] for x in numbers])}")
 print(f"How often bin 1 has the majority: {bin1_wins/100}")
-
-
-
-
-
-
-
-
-
-
-
