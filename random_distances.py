@@ -88,10 +88,13 @@ def floyd_warshal(vertices, my_edges):
     for u,v,w in my_edges:
         W[u][v] = w
     #matrix ready
-    D_prev = W
+    
+    D = W
     for k in range(n):
-        D_prev = [[min(D_prev[i][j], D_prev[i][k] + D_prev[k][j]) for j in range(n)] for i in range(n)]
-    return D_prev
+        for i in range(n):
+            for j in range(n):
+                D[i][j] = min(D[i][j],D[i][k] + D[k][j])
+    return D
 
 vtx = [0,1,2,3,4]
 edges = set([(0,1,3), (0,2,8), (0,4,-4),
