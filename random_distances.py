@@ -90,6 +90,7 @@ def floyd_warshal(vertices, my_edges):
     #matrix ready
     
     D = W
+    D = W
     for k in range(n):
         for i in range(n):
             for j in range(n):

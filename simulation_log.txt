@@ -1,0 +1,21 @@
+Exponentially distributed service time:
+T=10000 N=100   LAMBDA=0.5      service_mean=1
+1.9930389464612475
+T=10000 N=100   LAMBDA=0.5      service_mean=1
+1.9938618428022632
+T=10000 N=100   LAMBDA=0.8      service_mean=1
+4.970083200043639
+T=10000 N=100   LAMBDA=0.9      service_mean=1
+10.04055470956393
+T=10000 N=100   LAMBDA=0.99     service_mean=1
+53.11792525598138
+
+CONSTANT TIME
+T=10000 N=100   LAMBDA=0.5      service_mean=1
+1.4990012207920211
+T=10000 N=100   LAMBDA=0.8      service_mean=1
+2.9888758413244627
+T=10000 N=100   LAMBDA=0.9      service_mean=1
+5.420874324985407
+T=10000 N=100   LAMBDA=0.99     service_mean=1
+34.47086199213826
