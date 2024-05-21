@@ -22,6 +22,7 @@ def standard_normal_without_trig():
     return (X,Y)
 
 
+
 from time import perf_counter
 foos = [random_standard_normal,standard_normal_without_trig]
 n = 100
@@ -30,3 +31,25 @@ for f in foos:
     a = [f() for _ in range(n)]
     elapsed = perf_counter() - t
     print(f"{n} * {f.__name__} took {elapsed}")
+
+#use trigonometric, at least in python, it's faster
+
+'''exercise 8.7'''
+import matplotlib.pyplot as plt
+samples = []
+for _ in range(100000):
+    x,y = random_standard_normal()
+    samples += [x,y]
+
+k = 6
+counters = [0 for _ in range(k)]
+for s in samples:
+    for d in range(1,k+1):
+        if abs(s) <= d:
+            counters[d-1]+=1
+            break
+
+print(counters, f"Soma dos contadores = {sum(counters)}")
+plt.hist(samples,100)
+# We can set the number of bins with the *bins* keyword argument.
+plt.show()
